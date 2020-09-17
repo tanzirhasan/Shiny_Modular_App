@@ -1,9 +1,9 @@
 library(shiny)
 library(tidyverse)
+library(shinythemes)
 
-
-ui<- fluidPage(
-  tags$style(type="text/css",".recalculating{ opacity: 1.0; }"),
+ui<- fluidPage(theme = shinytheme("yeti"),
+   #tags$style(type="text/css",".recalculating{ opacity: 1.0; }",theme = "bootstrap.css"),
   titlePanel("Gapminder"),
   tabsetPanel(
     id= "continent",
